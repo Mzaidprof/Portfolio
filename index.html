@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3173479873.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- Header -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/without glow_00000.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer | Video Editor</p>
+                <h1>Hi, I'm Mohammed <br><span>Zaid</span> From India</h1>
+            </div>
+        </div>
+    </div>
+<!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about me 2_00000.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm Mohammed Zaid, a dynamic creator skilled in both web development and video editing. With a passion for innovation and a keen eye for detail, I specialize in blending these two worlds to produce captivating results. I'm here to bring your ideas to life in ways you never imagined!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>Video Editing</span><br>Advanced Motion Graphics</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>Made over a dozen projects using HTML, CSS, and JavaScript. <a href="https://github.com/Mzaidprof?tab=repositories" class="link" target="_blank" title="Projects">GitHub Repositories</a></li>
+                            <li><span>2019 - current</span><br>Professional Video Editor Specializing in Adobe After Effects. <a href="https://www.youtube.com/@Nonymouz" class="link" target="_blank" title="Channel 1">Nonymouz</a> , <a href="https://www.youtube.com/@subtleguys" class="link" target="_blank" title="Channel 2">Subtle Guys.</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 - 2027</span><br>Pursuing B.tech in the Department of Electronics and Communication Engineering(ECE) at <a href="https://vnrvjiet.ac.in/" target="_blank" class="link">VNR VJIET.</a></li>
+                            <li><span>2021 - 2022</span><br>11th and 12th at <a href="https://www.paramitaschools.in/" class="link" target="_blank">Paramita.</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Dev</h2>
+                    <p>Transform your ideas into stunning websites with my expert web development services. Using a combination of HTML, CSS, and JavaScript, I create custom web solutions tailored to your needs. Whether you need a sleek portfolio website, a robust e-commerce platform, or a dynamic web application, I've got you covered. With a focus on responsive design and user experience, I ensure your website looks great and functions flawlessly across all devices.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Elevate your digital presence with my expert UI/UX design services. From intuitive user interfaces to captivating user experiences, I specialize in crafting designs that engage and delight users. Using industry-leading tools and techniques, I create visually stunning and highly functional designs that enhance usability and drive engagement. Whether you need a new website, mobile app, or digital product, I'll work closely with you to bring your vision to life and create an unforgettable user experience.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <h2>Editing</h2>
+                    <p>Elevate your visual content with my expert editing services. From photos to videos and everything in between, I specialize in transforming raw footage into polished masterpieces. Using industry-leading software and creative techniques, I enhance your content to captivate your audience and leave a lasting impression. Whether you need professional-grade video editing, photo retouching, or visual effects, I'll work closely with you to bring your vision to life and deliver stunning results. Let's take your content to the next level!</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div id="work-slider" class="work-list">
+                <div class="work">
+                    <img src="images/weather_00000.jpg" alt="Weather-App">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>WeatherApp is a user-friendly weather application powered by the OpenWeather API. Providing real-time weather updates for any location worldwide, it offers accurate information on temperature, humidity, wind speed, and more. With an intuitive interface, WeatherApp ensures you stay informed about the weather forecast wherever you go, helping you plan your day with ease.</p>
+                        <a href="https://mzaidprof.github.io/Weather-app/" class="link" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>    
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/qr code_00000.jpg" alt="QR-Code-Generator">
+                    <div class="layer">
+                        <h3>QR Code Generator</h3>
+                        <p>QRCodeGenerator is a simple yet powerful web application that allows you to generate QR codes quickly and easily. Utilizing the QR Code API, it offers a seamless QR code generation process, enabling you to create custom QR codes for URLs, text, contact information, and more. With its intuitive interface, QRCodeGenerator provides a hassle-free experience for generating QR codes on the fly, whether for personal or professional use.</p>
+                        <a href="https://mzaidprof.github.io/QR-Code-Generator/" class="link" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/mov final_00000.jpg" alt="Movies-Website">
+                    <div class="layer">
+                        <h3>Movies Website(Frontend)</h3>
+                        <p>MoviesWebsite is a sleek and intuitive frontend-only website designed to showcase a curated collection of movies. With a minimalist yet elegant interface, it offers seamless navigation and an immersive browsing experience for movie enthusiasts. Explore the latest releases, discover hidden gems, and find your next cinematic adventure with MoviesWebsite.</p>
+                        <a href="https://mzaidprof.github.io/Movies-Website/" class="link" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Mzaidprof?tab=repositories" class="btn" target="_blank" title="Projects">See More</a>
+        </div>
+    </div>
+<!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> mohammedzaid.professional@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/justnonymouz/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/mohammed-zaid-877844291/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="images/Mohammed Zaid Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn3">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>Copyright &copy;<span>Mohammed Zaid</span></p>
+    </div>
+    </div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw7XwsBPIp8wWLajhasCGYfWuEy-XlkTZMCyKTGuuZCjd3LGJeoYdowa9h5L0-6w8aeLQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
