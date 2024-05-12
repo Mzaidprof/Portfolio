@@ -457,6 +457,9 @@ nav .fa-solid {
     #header {
         background-image: url(images/bg1\ phone.jpg);
     }
+    #header:hover {
+        background-position: center;
+    }
     .header-text {
         margin-top: 100%;
         font-size: 16px;
